@@ -21,9 +21,6 @@ export const Navbar = () => {
           <li><a href="#features" onClick={() => setMenuOpen(false)}>Features</a></li>
           <li><a href="#pricing" onClick={() => setMenuOpen(false)}>Pricing</a></li>
           <li><a href="#about" onClick={() => setMenuOpen(false)}>About</a></li>
-          <li className="nav-signin">
-            <button className="primary-btn">Sign In</button>
-          </li>
         </ul>
       </div>
     </nav>

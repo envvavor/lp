@@ -3,6 +3,7 @@ import { Stats } from './components/Stats';
 import { Features } from './components/Features';
 import './App.css';
 import { Navbar } from './components/Navbar';
+import { Footer } from './components/Footer';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Hero />
       <Stats />
       <Features />
+      <Footer />
     </div>
   );
 }

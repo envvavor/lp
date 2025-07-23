@@ -6,7 +6,7 @@ export const Hero = () => {
         <div className="hero-grid">
           <div className="hero-content">
             <h1>Make a cool Apps instantly with</h1>
-            <h1>ENVAPP</h1>
+            <h2>ENVAPP</h2>
             <p>Create stunning landing pages in minutes with our drag-and-drop builder</p>
             <div className="hero-buttons">
               <button className="primary-btn">Get Started</button>

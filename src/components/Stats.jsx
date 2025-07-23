@@ -3,7 +3,8 @@ export const Stats = () => {
     { value: "2M", label: "Downloads" },
     { value: "BK", label: "Businesses" },
     { value: "1M", label: "Active Users" },
-    { value: "2K", label: "Ratings" }
+    { value: "2K", label: "Ratings" },
+    { value: "99%", label: "Satisfaction" }
   ];
 
   return (
