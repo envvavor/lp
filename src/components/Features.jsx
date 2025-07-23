@@ -1,32 +1,32 @@
 export const Features = () => {
   const features = [
     {
-      title: "Fitur 1",
-      description: "Deskripsi singkat tentang fitur pertama Anda",
-      icon: "🌟"
+      icon: "⚡",
+      title: "Lightning Fast",
+      description: "Built with performance in mind for instant page loads"
     },
     {
-      title: "Fitur 2",
-      description: "Deskripsi singkat tentang fitur kedua Anda",
-      icon: "⚡"
+      icon: "🎨",
+      title: "Beautiful Designs",
+      description: "Pre-made templates that look amazing on any device"
     },
     {
-      title: "Fitur 3",
-      description: "Deskripsi singkat tentang fitur ketiga Anda",
-      icon: "🔒"
+      icon: "🧩",
+      title: "Easy Customization",
+      description: "Drag-and-drop interface with no coding required"
     }
   ];
 
   return (
-    <section className="features">
+    <section className="features-section">
       <div className="container">
-        <h2>Fitur Unggulan</h2>
+        <h2 className="section-title">What Makes sApp Different?</h2>
         <div className="features-grid">
           {features.map((feature, index) => (
             <div key={index} className="feature-card">
               <div className="feature-icon">{feature.icon}</div>
-              <h3>{feature.title}</h3>
-              <p>{feature.description}</p>
+              <h3 className="feature-title">{feature.title}</h3>
+              <p className="feature-description">{feature.description}</p>
             </div>
           ))}
         </div>
