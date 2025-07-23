@@ -20,9 +20,10 @@ export const Navbar = () => {
         </div>
 
         <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
-          <li><a href="#features" onClick={() => setMenuOpen(false)}>Features</a></li>
-          <li><a href="#pricing" onClick={() => setMenuOpen(false)}>Pricing</a></li>
-          <li><a href="#about" onClick={() => setMenuOpen(false)}>About</a></li>
+          <li><a href="#features" onClick={() => setMenuOpen(false)}>Testimoni</a></li>
+          <li><a href="#pricing" onClick={() => setMenuOpen(false)}>Galery</a></li>
+          <li><a href="#about" onClick={() => setMenuOpen(false)}>Tentang</a></li>
+          <li><a href="#about" onClick={() => setMenuOpen(false)}>Jadwal</a></li>
         </ul>
       </div>
     </nav>

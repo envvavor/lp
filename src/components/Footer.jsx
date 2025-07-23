@@ -1,5 +1,5 @@
 // src/components/Footer.jsx
-import { FaInstagram, FaFacebookF, FaYoutube, FaTiktok, FaGithub } from 'react-icons/fa';
+import { FaInstagram, FaFacebookF, FaYoutube, FaTiktok, FaGithub, FaWhatsapp } from 'react-icons/fa';
 import '../App.css';
 import { FaG } from 'react-icons/fa6';
 
@@ -12,6 +12,7 @@ export const Footer = () => {
         <a href="https://tiktok.com"><FaTiktok /></a>
         <a href="https:/youtube.com"><FaYoutube /></a>
         <a href="https://github.com/envvavor"><FaGithub /></a>
+        <a href="https://whatsapp.com"><FaWhatsapp /></a>
       </div>
       <p className="footer-subtext">Grow Together With Us</p>
 
