@@ -193,7 +193,6 @@ body {
     width: 100%;
     max-width: 320px;
     margin-bottom: 1rem;
-    border-radius: 16px;
   }
 
   .stats-section {
@@ -701,7 +700,6 @@ body {
 
   .hero-visual img {
     max-width: 90vw;
-    border-radius: 12px;
   }
 
   .features-section {
