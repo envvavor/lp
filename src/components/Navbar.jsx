@@ -9,7 +9,9 @@ export const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="container navbar-container">
-        <div className="logo">EnvApp</div>
+        <div className="logo-nav">
+          <img src="/images/logo.png" alt="Deskripsi gambar" className="gaya-saya"/>
+        </div>
 
         <div className={`nav-toggle ${menuOpen ? "open" : ""}`} onClick={toggleMenu}>
           <span></span>

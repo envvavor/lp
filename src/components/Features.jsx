@@ -47,7 +47,7 @@ export const Features = () => {
   return (
     <section className="features-section">
       <div className="container">
-        <h2 className="section-title">What Makes sApp Different?</h2>
+        <h2 className="section-title">What Makes EnvApp Different?</h2>
         
         <div 
           className="features-container" 

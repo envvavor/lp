@@ -1,15 +1,17 @@
 // src/components/Footer.jsx
-import { FaInstagram, FaFacebookF, FaYoutube, FaTiktok } from 'react-icons/fa';
+import { FaInstagram, FaFacebookF, FaYoutube, FaTiktok, FaGithub } from 'react-icons/fa';
 import '../App.css';
+import { FaG } from 'react-icons/fa6';
 
 export const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-social">
-        <FaInstagram />
-        <FaFacebookF />
-        <FaTiktok />
-        <FaYoutube />
+        <a href="https://instagram.com"><FaInstagram /></a>
+        <a href="https://facebook.com"><FaFacebookF /></a>
+        <a href="https://tiktok.com"><FaTiktok /></a>
+        <a href="https:/youtube.com"><FaYoutube /></a>
+        <a href="https://github.com/envvavor"><FaGithub /></a>
       </div>
       <p className="footer-subtext">Grow Together With Us</p>
 
@@ -25,8 +27,7 @@ export const Footer = () => {
       </div>
 
       <div className="footer-brand">
-        <span className="logo-icon">G</span>
-        <span className="logo-text">Creativy</span>
+        <img src="/images/logo.png" alt="Deskripsi gambar" className="gaya-saya"/>
       </div>
     </footer>
   );
