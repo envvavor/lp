@@ -5,7 +5,8 @@ export const Hero = () => {
       <div className="container">
         <div className="hero-grid">
           <div className="hero-content">
-            <h1>Make cool Landing pages with sApp</h1>
+            <h1>Make a cool Apps instantly with</h1>
+            <h1>ENVAPP</h1>
             <p>Create stunning landing pages in minutes with our drag-and-drop builder</p>
             <div className="hero-buttons">
               <button className="primary-btn">Get Started</button>
@@ -13,25 +14,7 @@ export const Hero = () => {
             </div>
           </div>
           <div className="hero-visual">
-            <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=400&h=300&fit=crop" alt="Hero Visual" />
-            <div className="stats-preview">
-              <div className="stat-item">
-                <div className="stat-value">2M</div>
-                <div className="stat-label">Downloads</div>
-              </div>
-              <div className="stat-item">
-                <div className="stat-value">BK</div>
-                <div className="stat-label">Businesses</div>
-              </div>
-              <div className="stat-item">
-                <div className="stat-value">1M</div>
-                <div className="stat-label">Active Users</div>
-              </div>
-              <div className="stat-item">
-                <div className="stat-value">2K</div>
-                <div className="stat-label">Ratings</div>
-              </div>
-            </div>
+            <img src="https://plus.unsplash.com/premium_photo-1720032305159-28f237187095?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Hero Visual" />
           </div>
         </div>
       </div>
