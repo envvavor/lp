@@ -4,6 +4,7 @@ import { Features } from './components/Features';
 import './App.css';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   return (
