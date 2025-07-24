@@ -1,4 +1,6 @@
 import { useEffect, useRef, useState } from "react";
+import { FaChartArea, FaChartBar, FaClipboard, FaComment } from "react-icons/fa";
+import { FaCheckDouble, FaSheetPlastic } from "react-icons/fa6";
 
 export const Features = () => {
   const containerRef = useRef(null);
@@ -6,12 +8,12 @@ export const Features = () => {
   const [isHovered, setIsHovered] = useState(false);
 
   const features = [
-    { icon: "⚡", title: "Strategi meta ads untuk brand jangka panjang", description: "" },
-    { icon: "🎨", title: "Strategi memenangkan persaingan di meta ads", description: "" },
-    { icon: "🧩", title: "Bikin KPI Iklan biar profit terjaga", description: "" },
-    { icon: "🔒", title: "Pra-campaign", description: "(bikin akun iklan, tips landingpage high conversion, tips konten iklan eye cacthing, setting pixel & event, setting payment)" },
-    { icon: "📈", title: "Running Campaign", description: "(cara formulasi iklan, praktek ngiklan, strategi split testing, strategi targetting, tips ads copy yang menarik)" },
-    { icon: "🌍", title: "Pasca-campaign", description: "(cara baca data yang tepat tanpa pusing banyak metrik, strategi benerin iklan)" },
+    { icon: <FaSheetPlastic />, title: "Strategi meta ads untuk brand jangka panjang", description: "" },
+    { icon: <FaChartBar />, title: "Strategi memenangkan persaingan di meta ads", description: "" },
+    { icon: <FaClipboard />, title: "Bikin KPI Iklan biar profit terjaga", description: "" },
+    { icon: <FaComment />, title: "Pra-campaign", description: "(bikin akun iklan, tips landingpage high conversion, tips konten iklan eye cacthing, setting pixel & event, setting payment)" },
+    { icon: <FaChartArea />, title: "Running Campaign", description: "(cara formulasi iklan, praktek ngiklan, strategi split testing, strategi targetting, tips ads copy yang menarik)" },
+    { icon: <FaCheckDouble />, title: "Pasca-campaign", description: "(cara baca data yang tepat tanpa pusing banyak metrik, strategi benerin iklan)" },
   ];
 
   // Auto-scroll logic

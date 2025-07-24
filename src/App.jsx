@@ -7,6 +7,7 @@ import { Footer } from './components/Footer';
 import { Analytics } from "@vercel/analytics/react"
 import { AdvancedClass } from './components/AdvancedClass';
 import { Cocok } from './components/Cocok';
+import { Gallery } from './components/Gallery';
 
 function App() {
   return (
@@ -20,7 +21,12 @@ function App() {
       <div id="features">
         <Features />
       </div>
-      <Cocok />
+      <div id='cocok'>
+        <Cocok />
+      </div>
+      <div id="gallery">
+        <Gallery />
+      </div>
       <Footer />
       <Analytics />
     </div>

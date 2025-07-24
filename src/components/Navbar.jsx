@@ -16,6 +16,20 @@ const scrollToAdvancedClass = () => {
   }
 };
 
+const scrollToGallery = () => {
+  const el = document.getElementById('gallery');
+  if (el) {
+    el.scrollIntoView({ behavior: 'smooth' });
+  }
+};
+
+const scrollToCocok = () => {
+  const el = document.getElementById('cocok');
+  if (el) {
+    el.scrollIntoView({ behavior: 'smooth' });
+  }
+}
+
 
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -36,10 +50,9 @@ export const Navbar = () => {
         </div>
 
         <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
-          <li><a href="#feature" onClick={scrollToFeatures}>feature</a></li>
-          <li><a href="#" onClick={() => setMenuOpen(false)}>Testimoni</a></li>
-          <li><a href="#pricing" onClick={() => setMenuOpen(false)}>Galery</a></li>
-          <li><a href="#about" onClick={() => setMenuOpen(false)}>Tentang</a></li>
+          <li><a href="#" onClick={scrollToFeatures}>Manfaat</a></li>
+          <li><a href="#" onClick={scrollToGallery}>Galery</a></li>
+          <li><a href="#" onClick={scrollToCocok}>Tentang</a></li>
           <li><a href="#" onClick={scrollToAdvancedClass}>Jadwal</a></li>
         </ul>
       </div>
