@@ -452,22 +452,41 @@ body {
 
 .stats-section {
   padding: 4rem 0;
-  background: linear-gradient(to bottom, #e0e7ff  , #00ADEF);
+  background-color: #00ADEF;
+}
+
+.stats-section .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.stats-section h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 5rem;
+  color: white
 }
 
 .stats-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
 }
 
 .stat-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
   text-align: center;
-  padding: 2rem;
-  border-radius: 10px;
-  background-color: var(--light-color);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 173, 239, 0.1);
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
 }
 
 .stat-item {
@@ -481,9 +500,29 @@ body {
   margin-bottom: 0.2rem;
 }
 
+.stat-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: white;
+  background-color: #00ADEF;
+  border-radius: 1rem;
+  padding: 0.5rem 4rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow:
+    inset 2px 2px 6px rgba(0, 0, 0, 0.15),
+    inset -2px -2px 6px rgba(255, 255, 255, 0.2),
+    0 4px 10px rgba(0, 173, 239, 0.3);
+}
+
 .stat-label {
-  font-size: 1rem;
-  color: #6c757d;
+  font-size: 1.1rem;
+  color: #495057;
+  line-height: 1.5;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
 }
 
 /* Features Section */
@@ -513,10 +552,13 @@ body {
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  gap: 4rem;
-  padding: 2rem 1rem;
+  gap: 2rem;
+  padding: 2rem 2rem;
   scrollbar-width: none;
   cursor: grab;
+  border-radius: 1rem;
+  background-color: #007dc672;
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.316);
 }
 
 .features-container::-webkit-scrollbar {
@@ -857,4 +899,132 @@ html, body {
 
 .logo-icon {
   font-size: 1.5rem;
+}
+
+.advanced-class-section {
+  padding: 4rem 0;
+  background: linear-gradient(to bottom, #e0e7ff, #00ADEF);
+}
+
+.advanced-class-section .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.class-container {
+  display: flex;
+  gap: 2rem;
+  align-items: stretch; /* Make both sides equal height */
+}
+
+.class-info {
+  flex: 0 0 auto; /* Don't grow or shrink */
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start; /* Align to top instead of stretching */
+  height: auto; /* Let content determine height */
+  min-height: 0; /* Prevent flex item from expanding */
+}
+
+.class-curriculum {
+  flex: 1; /* Take remaining space */
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  min-height: 0; /* Prevent flex item from expanding */
+}
+
+.class-title {
+  font-size: 1.8rem;
+  color: #00ADEF;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.class-date, 
+.class-time, 
+.class-location {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.curriculum-title {
+  font-size: 1.4rem;
+  color: #00ADEF;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.curriculum-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.curriculum-list li {
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 1rem;
+  color: #444;
+  display: flex;
+  align-items: flex-start;
+  line-height: 1.5;
+}
+
+.curriculum-list li:before {
+  content: "•";
+  color: #00ADEF;
+  font-size: 1.5rem;
+  margin-right: 0.8rem;
+  line-height: 1;
+}
+
+@media (max-width: 900px) {
+  .class-container {
+    gap: 1.5rem;
+  }
+  
+  .class-info,
+  .class-curriculum {
+    padding: 1.5rem;
+  }
+  
+  .class-title {
+    font-size: 1.6rem;
+  }
+  
+  .curriculum-title {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .class-container {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .class-info,
+  .class-curriculum {
+    padding: 1.5rem;
+    width: 100%;
+  }
+  
+  .curriculum-list li {
+    font-size: 0.95rem;
+  }
 }

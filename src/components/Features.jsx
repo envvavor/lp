@@ -36,7 +36,7 @@ export const Features = () => {
     const containerWidth = container.offsetWidth;
     const cardWidth = card.offsetWidth;
     const cardLeft = card.offsetLeft;
-    const scrollTo = cardLeft - (containerWidth / 2) + (cardWidth / 2);
+    const scrollTo = cardLeft - (containerWidth / 3) + (cardWidth / 3);
 
     container.scrollTo({
       left: scrollTo,

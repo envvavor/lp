@@ -5,12 +5,14 @@ import './App.css';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { Analytics } from "@vercel/analytics/react"
+import { AdvancedClass } from './components/AdvancedClass';
 
 function App() {
   return (
     <div className="App">
       <Navbar/>
       <Hero />
+      <AdvancedClass />
       <Stats />
       <Features />
       <Footer />
