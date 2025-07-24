@@ -512,7 +512,7 @@ body {
   justify-content: center;
 
   box-shadow:
-    inset 2px 2px 6px rgba(0, 0, 0, 0.15),
+    inset 2px 2px 6px rgba(0, 0, 0, 0.662),
     inset -2px -2px 6px rgba(255, 255, 255, 0.2),
     0 4px 10px rgba(0, 173, 239, 0.3);
 }
@@ -558,7 +558,10 @@ body {
   cursor: grab;
   border-radius: 1rem;
   background-color: #007dc672;
-  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.316);
+  box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.662),
+    inset -2px -2px 6px rgba(255, 255, 255, 0.2),
+    0 4px 10px rgba(0, 173, 239, 0.3);
+  
 }
 
 .features-container::-webkit-scrollbar {
@@ -841,6 +844,7 @@ html, body {
   text-align: center;
   padding: 3rem 1rem;
   font-family: 'Poppins', sans-serif;
+  border-top: 0.2rem solid rgb(255, 255, 255);
 }
 
 .footer-social {
@@ -858,6 +862,11 @@ html, body {
   font-size: 1.5rem;
   margin-bottom: 1rem;
   color: white;
+  box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.662),
+    inset -2px -2px 6px rgba(255, 255, 255, 0.2),
+    0 4px 10px rgba(0, 173, 239, 0.3);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
 }
 
 .footer-subtext {
@@ -895,6 +904,11 @@ html, body {
 
 .footer-brand img{
   width: 15%;
+  box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.662),
+    inset -2px -2px 6px rgba(255, 255, 255, 0.2),
+    0 4px 10px rgba(0, 173, 239, 0.3);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
 }
 
 .logo-icon {
@@ -918,7 +932,19 @@ html, body {
   align-items: stretch; /* Make both sides equal height */
 }
 
-.class-info {
+.class-image {
+  flex: 0 0 auto;
+  width: 320px; /* Perbesar ukuran gambar */
+  padding: 0.5rem;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+}
+
+.class-info{
   flex: 0 0 auto; /* Don't grow or shrink */
   padding: 2rem;
   background-color: #fff;
@@ -929,6 +955,13 @@ html, body {
   align-self: flex-start; /* Align to top instead of stretching */
   height: auto; /* Let content determine height */
   min-height: 0; /* Prevent flex item from expanding */
+}
+
+.class-image img {
+  width: 100%;   /* Gunakan seluruh container */
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 
 .class-curriculum {
@@ -985,6 +1018,24 @@ html, body {
   line-height: 1.5;
 }
 
+.curriculum-list2 li {
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 1rem;
+  color: #444;
+  display: flex;
+  align-items: flex-start;
+  line-height: 1.5;
+  gap: 0.5rem;
+}
+
+.class-curriculum img {
+  width: 100%;
+  align-self: flex-start;
+  flex: 0 0 auto;
+  height: auto;
+}
+
 .curriculum-list li:before {
   content: "•";
   color: #00ADEF;
@@ -1026,5 +1077,11 @@ html, body {
   
   .curriculum-list li {
     font-size: 0.95rem;
+  }
+
+  .class-image {
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
   }
 }

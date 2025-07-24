@@ -6,12 +6,14 @@ export const Features = () => {
   const [isHovered, setIsHovered] = useState(false);
 
   const features = [
-    { icon: "⚡", title: "Lightning Fast", description: "Built with performance in mind for instant page loads" },
-    { icon: "🎨", title: "Beautiful Designs", description: "Pre-made templates that look amazing on any device" },
-    { icon: "🧩", title: "Easy Customization", description: "Drag-and-drop interface with no coding required" },
-    { icon: "🔒", title: "Secure & Reliable", description: "Top-notch security features to protect your data" },
-    { icon: "📈", title: "Analytics Ready", description: "Built-in analytics to track your page performance" },
-    { icon: "🌍", title: "Global Reach", description: "Optimized for SEO and international audiences" }
+    { icon: "⚡", title: "Strategi meta ads untuk brand jangka panjang", description: "" },
+    { icon: "🎨", title: "Strategi memenangkan persaingan di meta ads", description: "" },
+    { icon: "🧩", title: "Bikin KPI Iklan biar profit terjaga", description: "" },
+    { icon: "🔒", title: "Pra-campaign", description: "(bikin akun iklan, tips landingpage high conversion, tips konten iklan eye cacthing, setting pixel & event, setting payment)" },
+    { icon: "📈", title: "Running Campaign", description: "(cara formulasi iklan, praktek ngiklan, strategi split testing, strategi targetting, tips ads copy yang menarik)" },
+    { icon: "🌍", title: "Pasca-campaign", description: "(cara baca data yang tepat tanpa pusing banyak metrik, strategi benerin iklan)" },
+    { icon: "🤝", title: "Scale Up + Scale Out Iklan yang tetap profitable", description:""},
+    { icon: "📚", title: "Retargetting, LAA Audience, strategi melebarkan jangkauan tertarget", description: "" },
   ];
 
   // Auto-scroll logic
@@ -47,7 +49,7 @@ export const Features = () => {
   return (
     <section className="features-section">
       <div className="container">
-        <h2 className="section-title">What Makes EnvApp Different?</h2>
+        <h2 className="section-title">Setelah Mengikuti Kelas Ini Anda Akan Dapat Skill</h2>
         
         <div 
           className="features-container" 

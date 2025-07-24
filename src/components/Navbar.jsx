@@ -1,5 +1,21 @@
 import React, { useState } from "react";
 import "../App.css"; // atau masukkan ke App.css
+import { AdvancedClass } from "./AdvancedClass";
+
+const scrollToFeatures = () => {
+  const el = document.getElementById('features');
+  if (el) {
+    el.scrollIntoView({ behavior: 'smooth' });
+  }
+};
+
+const scrollToAdvancedClass = () => {
+  const el = document.getElementById('advanced-class');
+  if (el) {
+    el.scrollIntoView({ behavior: 'smooth' });
+  }
+};
+
 
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -20,10 +36,11 @@ export const Navbar = () => {
         </div>
 
         <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
-          <li><a href="#features" onClick={() => setMenuOpen(false)}>Testimoni</a></li>
+          <li><a href="#feature" onClick={scrollToFeatures}>feature</a></li>
+          <li><a href="#" onClick={() => setMenuOpen(false)}>Testimoni</a></li>
           <li><a href="#pricing" onClick={() => setMenuOpen(false)}>Galery</a></li>
           <li><a href="#about" onClick={() => setMenuOpen(false)}>Tentang</a></li>
-          <li><a href="#about" onClick={() => setMenuOpen(false)}>Jadwal</a></li>
+          <li><a href="#" onClick={scrollToAdvancedClass}>Jadwal</a></li>
         </ul>
       </div>
     </nav>

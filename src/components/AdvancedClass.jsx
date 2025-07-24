@@ -1,16 +1,23 @@
 import { FaCity, FaClock } from "react-icons/fa";
 import "../App.css";
+import { FaTicket } from "react-icons/fa6";
 
 export const AdvancedClass = () => {
   return (
     <section className="advanced-class-section">
       <div className="container">
         <div className="class-container">
+        
+            <div className="class-image">
+                <img src="/images/Poster.webp" alt="" />
+            </div>
+
           <div className="class-info">
             <h2 className="class-title">ADVANCED CLASS</h2>
             <div className="class-date">9 AGUSTUS 2025</div>
             <div className="class-time"><FaClock /> 09.00 - 17.00 WIB</div>
             <div className="class-location"><FaCity /> YOGYAKARTA</div>
+            <div className="class-location"><FaTicket />Rp. 1.500.000</div>
           </div>
           
           <div className="class-curriculum">

@@ -6,15 +6,21 @@ import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { Analytics } from "@vercel/analytics/react"
 import { AdvancedClass } from './components/AdvancedClass';
+import { Cocok } from './components/Cocok';
 
 function App() {
   return (
     <div className="App">
       <Navbar/>
       <Hero />
-      <AdvancedClass />
+      <div id='advanced-class'>
+        <AdvancedClass />
+      </div>
       <Stats />
-      <Features />
+      <div id="features">
+        <Features />
+      </div>
+      <Cocok />
       <Footer />
       <Analytics />
     </div>
