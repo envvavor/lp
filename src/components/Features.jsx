@@ -12,8 +12,6 @@ export const Features = () => {
     { icon: "🔒", title: "Pra-campaign", description: "(bikin akun iklan, tips landingpage high conversion, tips konten iklan eye cacthing, setting pixel & event, setting payment)" },
     { icon: "📈", title: "Running Campaign", description: "(cara formulasi iklan, praktek ngiklan, strategi split testing, strategi targetting, tips ads copy yang menarik)" },
     { icon: "🌍", title: "Pasca-campaign", description: "(cara baca data yang tepat tanpa pusing banyak metrik, strategi benerin iklan)" },
-    { icon: "🤝", title: "Scale Up + Scale Out Iklan yang tetap profitable", description:""},
-    { icon: "📚", title: "Retargetting, LAA Audience, strategi melebarkan jangkauan tertarget", description: "" },
   ];
 
   // Auto-scroll logic
