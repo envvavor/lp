@@ -1,4 +1,12 @@
-// src/components/Hero.jsx
+import '../App.css';
+
+const scrollToFeatures = () => {
+  const featuresSection = document.getElementById('features');
+  if (featuresSection) {
+    featuresSection.scrollIntoView({ behavior: 'smooth' });
+  }
+};
+
 export const Hero = () => {
   return (
     <section className="hero-section">
@@ -14,7 +22,9 @@ export const Hero = () => {
               <a href="https://api.whatsapp.com/send/?phone=6281353025302&text=Hai+kak+Asfi+saya+mau+konsultasi+ingin+Privat+mentoring+facebook+ads.+bisa+dibantu%3F&type=phone_number&app_absent=0">
                 <button className="primary-btn">Daftar Sekarang</button>
               </a>
-              <button className="secondary-btn">Manfaat Program</button>
+              <a href="#" onClick={scrollToFeatures}>
+                <button className="secondary-btn">Manfaat Program</button>
+              </a>
             </div>
           </div>
           <div className="hero-visual">

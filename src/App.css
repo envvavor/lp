@@ -775,7 +775,7 @@ body {
 }
 
 /* Responsive khusus untuk layar <= 400px */
-@media (max-width: 400px) {
+@media (max-width: 480px) {
   html, body {
     max-width: 100vw;
     overflow-x: hidden;
@@ -945,7 +945,6 @@ html, body {
   text-align: center;
   padding: 3rem 1rem;
   font-family: 'Poppins', sans-serif;
-  border-top: 0.2rem solid rgb(255, 255, 255);
 }
 
 .footer-social {
@@ -1452,5 +1451,9 @@ html, body {
   .modal-content {
     width: 95%;
     padding: 1rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
   }
 }
