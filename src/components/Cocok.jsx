@@ -1,4 +1,4 @@
-import { FaCity, FaClock } from "react-icons/fa";
+import { FaArrowAltCircleRight, FaCity, FaClock } from "react-icons/fa";
 import "../App.css";
 import { FaTicket } from "react-icons/fa6";
 
@@ -29,6 +29,16 @@ export const Cocok = () => {
               <li><span className="list-icon">✘</span> Yang mau hasil instan</li>
               <li><span className="list-icon">✘</span> Yang ngga mau fokus perbaikan</li>
               <li><span className="list-icon">✘</span> Yang punya mindset ngiklan = beban</li>
+            </ul>
+          </div>
+
+          <div className="class-curriculum">
+            <h3 className="curriculum-title">Alasan Kenapa Harus Ikut</h3>
+            <ul className="curriculum-list2">
+              <li><span className="list-icon"><FaArrowAltCircleRight /></span> Punya roadmap yang jelas untuk buat brand semakin besar</li>
+              <li><span className="list-icon"><FaArrowAltCircleRight /></span> Ini kelas offline, jadi kamu ngga bingung sendiri. Bisa praktek langsung dan didampingi. Bisa tanya jawab langsung secara leluasa</li>
+              <li><span className="list-icon"><FaArrowAltCircleRight /></span> Ada grup support buat tanya jawab selesai kelas. Dari Batch 1 pun masih aktif sampai sekarang </li>
+              <li><span className="list-icon"><FaArrowAltCircleRight /></span> Per bulan Maret 2025 ini sudah ada 80 angkatan kelas, di 3 kota besar: Jogja, Jakarta, Surabaya.</li>
             </ul>
           </div>
         </div>

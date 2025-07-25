@@ -862,7 +862,7 @@ body {
     box-sizing: border-box;
     display: block !important;
     margin: 0 auto !important;
-    border-radius: 10px !important;
+    border-radius: 15px !important;
     object-fit: contain !important;
   }
   .class-info,
@@ -1060,7 +1060,7 @@ html, body {
 .class-image img {
   width: 100%;   /* Gunakan seluruh container */
   height: auto;
-  border-radius: 12px;
+  border-radius: 15px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 
