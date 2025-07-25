@@ -8,6 +8,7 @@ import { Analytics } from "@vercel/analytics/react"
 import { AdvancedClass } from './components/AdvancedClass';
 import { Cocok } from './components/Cocok';
 import { Gallery } from './components/Gallery';
+import { PromoEarlyBird } from './components/Promo';
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
       </div>
       <div id='cocok'>
         <Cocok />
+      </div>
+      <div id='promo'>
+        <PromoEarlyBird />
       </div>
       <div id="gallery">
         <Gallery />

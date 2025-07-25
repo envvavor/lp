@@ -1457,3 +1457,241 @@ html, body {
     font-size: 2.5rem;
   }
 }
+
+/* Layout Section */
+.promo-section {
+  padding: 4rem 1rem;
+  background-color: #00ADEF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  max-width: 100%;
+}
+
+/* Container */
+.promo-container {
+  max-width: 600px;
+  width: 100%;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Harga Coret + Badge */
+.price-comparison {
+  margin-bottom: 0.5rem;
+}
+
+.original-price {
+  font-size: 1.2rem;
+  color: #888;
+  text-decoration: line-through;
+}
+
+.not-badge {
+  display: inline-block;
+  margin-top: 0.5rem;
+  background: #ff3b3b;
+  color: #fff;
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* Badge Promo */
+.promo-badge {
+  background: linear-gradient(90deg, #f44336, #ff7043);
+  color: white;
+  padding: 0.8rem;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  animation: pulse 2s infinite;
+}
+
+/* Pilihan Harga Tiket */
+.tier-pricing {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.price-tier {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: #f9f9f9;
+}
+
+.price-tier:hover {
+  background-color: #eef8ff;
+  border-color: #00ADEF;
+}
+
+.price-tier.active {
+  border-color: #00ADEF;
+  background: #e0f7ff;
+}
+
+.quantity {
+  font-weight: 600;
+  color: #333;
+}
+
+.price {
+  font-weight: 700;
+  color: #00ADEF;
+  font-size: 1.1rem;
+}
+
+/* Tombol CTA */
+.cta-button {
+  display: inline-block;
+  background: linear-gradient(90deg, #00ADEF, #0088cc);
+  color: white;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 50px;
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 173, 239, 0.4);
+  text-align: center;
+}
+
+.cta-button a {
+  color: white;
+  text-decoration: none;
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 173, 239, 0.5);
+}
+
+/* Bonus Section */
+.bonus-section {
+  text-align: left;
+  background: #f9f9ff;
+  border: 1px solid #e0e7ff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.bonus-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.bonus-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.bonus-list li {
+  font-size: 1rem;
+  color: #444;
+}
+
+.bonus-divider {
+  background: #00adef;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.bonus-item h4 {
+  font-size: 1.05rem;
+  color: #00ADEF;
+  margin-bottom: 0.4rem;
+}
+
+.bonus-item p {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+.bonus-highlight {
+  background: linear-gradient(to right, #8ebfff, #00ADEF);
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.8rem;
+  border-radius: 8px;
+  animation: pulse 1.8s infinite;
+}
+
+.bonus-warning {
+  font-size: 0.95rem;
+  color: black;
+  text-align: center;
+  font-weight: 600;
+  margin: 0;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .promo-container {
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+  .promo-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+  }
+
+  .price-tier {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.3rem;
+  }
+
+  .cta-button {
+    font-size: 1rem;
+    padding: 0.9rem 1rem;
+  }
+
+  .bonus-section {
+    padding: 1rem;
+  }
+
+  .bonus-list li {
+    font-size: 0.95rem;
+  }
+
+  .bonus-item p {
+    font-size: 0.9rem;
+  }
+
+  .bonus-warning {
+    font-size: 0.9rem;
+  }
+}
+

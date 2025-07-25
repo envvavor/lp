@@ -30,6 +30,13 @@ const scrollToCocok = () => {
   }
 }
 
+const scrollToPromo = () => {
+  const el = document.getElementById('promo');
+  if (el) {
+    el.scrollIntoView({ behavior: 'smooth' });
+  }
+};
+
 
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -50,6 +57,7 @@ export const Navbar = () => {
         </div>
 
         <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
+          <li><a href="#" onClick={scrollToPromo}>Promo</a></li>
           <li><a href="#" onClick={scrollToFeatures}>Manfaat</a></li>
           <li><a href="#" onClick={scrollToGallery}>Galery</a></li>
           <li><a href="#" onClick={scrollToCocok}>Tentang</a></li>
