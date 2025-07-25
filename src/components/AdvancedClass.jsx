@@ -21,7 +21,7 @@ export const AdvancedClass = () => {
           </div>
           
           <div className="class-curriculum">
-            <h3 className="curriculum-title">Materi Hari Kedua (Meta Ads For Advanced):</h3>
+            <h3 className="curriculum-title">Materi Meta Ads For Advanced</h3>
             <ul className="curriculum-list">
               <li><span className="list-icon"></span> Manajemen aset akun FB, FP, Pixel, Payment, dll</li>
               <li><span className="list-icon"></span> Instal laporan iklan versi yang lebih detail</li>
